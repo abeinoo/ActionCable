@@ -47,9 +47,6 @@
      - Create Notification 
         ```bash
         > Notification.create(recipient: User.first, user: User.last, action: "followed", notifiable: User.first)
-     - Create Notification 
-        ```bash
-        > Notification.create(recipient: User.first, user: User.last, action: "followed", notifiable: User.first)
         > notification = Notification.last
 
         ```    
@@ -59,7 +56,7 @@
         ```
       - Active Job notification
           ```bash
-          NotificationRelayJob.perform_later(notification)
+          > NotificationRelayJob.perform_later(notification)
 
           ```
     
