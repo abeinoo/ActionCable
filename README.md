@@ -10,8 +10,16 @@
 ### Set up development environment
 
 ####  Requirements
-
   * Install [Redis](https://redis.io/)
+    Linux
+  ```bash
+  wget http://download.redis.io/redis-stable.tar.gz
+  tar xvzf redis-stable.tar.gz
+  cd redis-stable
+  make
+  make install
+  ```
+  Mac
   ```bash
         $ brew update
         $ brew install redis
